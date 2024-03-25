@@ -3,9 +3,58 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{4675CB81-2053-4CBD-82BB-46FDDEDCA6F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETradeAPI.Domain", "Core\ETradeAPI.Domain\ETradeAPI.Domain.csproj", "{A8303177-ACA5-4F90-B91E-AA68B5E4308A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETradeAPI.Application", "Core\ETradeAPI.Application\ETradeAPI.Application.csproj", "{617BD791-959C-42D7-918F-049EE9646C61}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{C1E32647-6C2D-4A26-92B5-81D4F3454AE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETradeAPI.Infrastructure", "Infrastructure\ETradeAPI.Infrastructure\ETradeAPI.Infrastructure.csproj", "{59EA2D13-B9DC-41F0-9391-2A6E235E17AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETradeAPI.Persistence", "Infrastructure\ETradeAPI.Persistence\ETradeAPI.Persistence.csproj", "{E2394925-DB5E-4C07-94EC-45EB428C4EE4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{72526A25-7301-4FB1-B9F4-14DD5D0C76EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETradeAPI.API", "Presentation\ETradeAPI.API\ETradeAPI.API.csproj", "{1C43F6D1-17AC-4FBE-B154-A1729F61D715}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8303177-ACA5-4F90-B91E-AA68B5E4308A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8303177-ACA5-4F90-B91E-AA68B5E4308A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8303177-ACA5-4F90-B91E-AA68B5E4308A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8303177-ACA5-4F90-B91E-AA68B5E4308A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{617BD791-959C-42D7-918F-049EE9646C61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{617BD791-959C-42D7-918F-049EE9646C61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{617BD791-959C-42D7-918F-049EE9646C61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{617BD791-959C-42D7-918F-049EE9646C61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59EA2D13-B9DC-41F0-9391-2A6E235E17AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59EA2D13-B9DC-41F0-9391-2A6E235E17AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59EA2D13-B9DC-41F0-9391-2A6E235E17AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59EA2D13-B9DC-41F0-9391-2A6E235E17AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2394925-DB5E-4C07-94EC-45EB428C4EE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2394925-DB5E-4C07-94EC-45EB428C4EE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2394925-DB5E-4C07-94EC-45EB428C4EE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2394925-DB5E-4C07-94EC-45EB428C4EE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C43F6D1-17AC-4FBE-B154-A1729F61D715}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C43F6D1-17AC-4FBE-B154-A1729F61D715}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C43F6D1-17AC-4FBE-B154-A1729F61D715}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C43F6D1-17AC-4FBE-B154-A1729F61D715}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A8303177-ACA5-4F90-B91E-AA68B5E4308A} = {4675CB81-2053-4CBD-82BB-46FDDEDCA6F3}
+		{617BD791-959C-42D7-918F-049EE9646C61} = {4675CB81-2053-4CBD-82BB-46FDDEDCA6F3}
+		{59EA2D13-B9DC-41F0-9391-2A6E235E17AE} = {C1E32647-6C2D-4A26-92B5-81D4F3454AE9}
+		{E2394925-DB5E-4C07-94EC-45EB428C4EE4} = {C1E32647-6C2D-4A26-92B5-81D4F3454AE9}
+		{1C43F6D1-17AC-4FBE-B154-A1729F61D715} = {72526A25-7301-4FB1-B9F4-14DD5D0C76EC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F7638E4C-D68C-48FA-AA06-955FC79E0510}
