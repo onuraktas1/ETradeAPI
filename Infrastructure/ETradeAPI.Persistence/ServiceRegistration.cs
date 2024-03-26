@@ -1,5 +1,4 @@
-﻿using ETradeAPI.Application.Abstractions;
-using ETradeAPI.Persistence.Contexts;
+﻿using ETradeAPI.Persistence.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
