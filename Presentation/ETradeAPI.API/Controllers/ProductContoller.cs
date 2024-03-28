@@ -21,15 +21,19 @@ namespace ETradeAPI.API.Controllers
         [HttpGet]
         public async Task Get()
         {
-            await _productWriteRepository.AddRangeAsync(new()
-            {
-                new(){ Id=Guid.NewGuid(), Name="Product 1", Price=100,CreatedDate=DateTime.UtcNow, Stock=10 },
-                new(){ Id=Guid.NewGuid(), Name="Product 2s", Price=200,CreatedDate=DateTime.UtcNow, Stock=13 },
-                new(){ Id=Guid.NewGuid(), Name="Product 3", Price=500,CreatedDate=DateTime.UtcNow, Stock=15 },
-                new(){ Id=Guid.NewGuid(), Name="Product 4", Price=400,CreatedDate=DateTime.UtcNow, Stock=16 },
+            //await _productWriteRepository.AddRangeAsync(new()
+            //{
+            //    new(){ Id=Guid.NewGuid(), Name="Product 1", Price=100,CreatedDate=DateTime.UtcNow, Stock=10 },
+            //    new(){ Id=Guid.NewGuid(), Name="Product 2s", Price=200,CreatedDate=DateTime.UtcNow, Stock=13 },
+            //    new(){ Id=Guid.NewGuid(), Name="Product 3", Price=500,CreatedDate=DateTime.UtcNow, Stock=15 },
+            //    new(){ Id=Guid.NewGuid(), Name="Product 4", Price=400,CreatedDate=DateTime.UtcNow, Stock=16 },
 
-            });
+            //});
 
+            //await _productWriteRepository.SaveAsync();
+
+            Product p = await _productReadRepository.GetByIdAsync("30b57909-d7d2-4431-964a-92cca51fbc6a",false);
+            p.Name = "Habip";
             await _productWriteRepository.SaveAsync();
         }
 
