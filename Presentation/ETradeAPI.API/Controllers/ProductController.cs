@@ -7,7 +7,7 @@ namespace ETradeAPI.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ProductContoller : ControllerBase
+    public class ProductController : ControllerBase
     {
         readonly private IProductWriteRepository _productWriteRepository;
         readonly private IProductReadRepository _productReadRepository;
@@ -18,7 +18,7 @@ namespace ETradeAPI.API.Controllers
         readonly private ICustomerWriteRepository _customerWriteRepository;
         readonly private ICustomerReadRepository _customerReadRepository;
 
-        public ProductContoller(
+        public ProductController(
             IProductWriteRepository productWriteRepository,
             IProductReadRepository productReadRepository,
             IOrderWriteRepository orderWriteRepository,
